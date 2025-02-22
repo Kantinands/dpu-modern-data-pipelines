@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: temp_greater_than_35
+    description: Temp greater than 35C
+    columns:
+      - name: dt
+        description: date stamp 
+        data_tests:
+          - not_null 
+      - name: temp
+        description: temp in C 
+        data_tests:
+          - not_null 
+      - name: feels_like
+        description: temp in C which we feel  
